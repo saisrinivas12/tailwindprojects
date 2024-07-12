@@ -1,0 +1,1218 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind web app.io clone project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-black">
+    <nav
+        class="z-20 relative p-4 lg:border-b lg:border-white  text-white flex gap-6 items-center justify-around bg-opacity-80">
+        <div class="flex gap-2 items-center ">
+            <div class="w-12 h-12">
+                <img src="./images/asset-1.avif" alt="">
+            </div>
+            <h1 class="text-2xl font-display font-bold ">webapp.io</h1>
+        </div>
+        <div class="hidden lg:flex lg:gap-10 lg:items-center">
+            <a href="" class="text-md font-display font-medium">Product</a>
+            <a href="" class="text-md font-display font-medium">Docs</a>
+            <a href="" class="text-md font-display font-medium">Pricing</a>
+            <a href="" class="text-md font-display font-medium">Blog</a>
+
+        </div>
+        <div class="flex gap-6 justify-between items-center ">
+            <button class="lg:inline-block lg:font-medium lg:font-display hidden">
+                Login
+            </button>
+            <button
+                class="font-display font-medium bg-gradient-to-br from-blue-500 via-pink-600 to-violet-800b  px-12 py-2 rounded-lg">
+                Signup
+            </button>
+            <div class="p-4 lg:hidden" onclick="handleMenu()">
+                <i class="fa fa-solid fa-bars cursor-pointer font-normal text-3xl"></i>
+            </div>
+        </div>
+        <div id="nav-dialog" class="  z-10  hidden absolute inset-0 bg-black">
+            <div class="flex  items-center justify-between ">
+                <div class="flex gap-2 items-center">
+                    <div class="w-12 h-12">
+                        <img src="./images/asset-1.avif" alt="">
+                    </div>
+                    <h1 class="text-2xl font-display font-bold ">webapp.io</h1>
+                </div>
+                <div onclick="handleMenu()">
+                    <i class="fa fa-solid fa-times cursor-pointer  text-2xl font-medium"></i>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6 mt-12 bg-black">
+                <a href="" class="text-lg font-display font-medium px-6 py-3">Product</a>
+                <a href="" class="text-lg font-display font-medium  px-6 py-3">Docs</a>
+                <a href="" class="text-lg font-display font-medium  px-6 py-3">Pricing</a>
+                <a href="" class="text-lg font-display font-medium  px-6 py-3">Blog</a>
+            </div>
+            <div class="h-[1px] border border-white mt-8 border-opacity-50"></div>
+            <div class="mt-8 bg-black">
+                <a href=""
+                    class=" px-8 py-2 rounded-lg text-xl font-bold font-display hover:border hover:border-white hover:border-opacity-30">Login</a>
+
+            </div>
+            <div class="h-screen bg-black"></div>
+
+        </div>
+
+    </nav>
+
+    <!--hero section-->
+    <div id="hero-section" class="overflow-x-hidden">
+        <div id="hero-details" class="px-6 py-12 mx-auto max-w-7xl">
+            <div id="main-content" class="rounded-lg  p-4  flex flex-col gap-6 items-center text-white ">
+                <h2
+                    class="custom text-lg font-semibold border border-white text-center px-3 py-1 rounded-xl shadow-sm shadow-white  w-fit ">
+                    CI/CD & PREVIEW ENVIRONMENTS</h2>
+                <h1 class="text-5xl mt-8  text-white font-semibold font-display ">
+                    10x Better DevOps for Webapps
+                </h1>
+                <p class="text-center custom  text-lg font-display max-w-2xl tracking-wide leading-normal">
+                    Webapp.io's hosted tested environments build 10x faster than
+                    general CI/CD platforms.Build your web apps faster and try us free today.
+                </p>
+                <div class="w-full flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center">
+                    <button
+                        class="w-full custom md:max-w-fit  text-xl font-display bg-blue-500 px-8 py-3 font-semibold rounded-lg flex gap-2 justify-center">
+                        <span>Start for free</span>
+                        <i class="fa fa-solid fa-arrow-up-right-from-square text-red-600"></i>
+
+                    </button>
+                    <button
+                        class="w-full md:w-fit  text-xl font-display font-semibold border md:border-2 border-white px-8 py-3 rounded-lg flex gap-2 justify-center">
+                        <span class="custom">Read the docs</span>
+                        <i class="fa fa-solid fa-arrow-up-right-from-square text-red-600"></i>
+
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="developer-list" class="mt-24 flex flex-col gap-5 justify-center bg-black ">
+                <div id="line-1" class="flex  border border-white rounded-lg border-opacity-50">
+                    <div class="flex flex-col">
+                        <div id="main-section" class="flex gap-4  rounded-lg px-8 py-3">
+                            <div id="dev-image" class="w-12 overflow-hidden bg-black">
+                                <img src="./images/asset 45.jpeg" alt="" class="rounded-full">
+                            </div>
+                            <div id="dev-name" class="flex flex-col gap-1 justify-start">
+                                <h3 class="text-md text-white font-display">Colin Chartier</h3>
+                                <p class="text-gray-500 text-sm font-display">webapp.io #59 <span
+                                        class="inline-block -translate-y-1">.</span>master </p>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] bg-slate-800"></div>
+
+                        <div class=" max-w-48 ml-6 tracking-wide mt-10 mb-16">
+                            <p class="text-left text-gray-300 text-md font-display font-light">Deploy the best CI/CD in
+                                the world</p>
+                        </div>
+                        <div class="h-[1px] bg-gray-100 bg-opacity-50"></div>
+                        <div class="flex flex-col gap-2 items-center  py-6">
+                            <div class="flex gap-2 items-center justify-center">
+                                <i class="fa-regular fa-clock text-white "></i>
+                                <p class="text-gray-300 text-md font-display font-light">Started 5m ago</p>
+                                <span class="inline-block -translate-y-1 text-gray-300">.</span>
+                                <p class="text-gray-300 text-md font-display font-light">Took 5 min</p>
+                            </div>
+                            <div class="flex gap-2 items-center justify-center">
+                                <i class="fa fa-regular fa-clock text-white"></i>
+                                <a href=""
+                                    class="text-gray-300 text-md font-display font-light ">run-60.ciception.com</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="level1" class="border-x border-white border-opacity-50">
+                        <div class="flex flex-col gap-6 justify-center items-center ">
+                            <div class="flex justify-between  bg-gray-800 min-w-80 px-2 py-3 ">
+                                <h3 class="text-white text-md font-display font-medium">Level1</h3>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa fa-solid fa-check  text-green-500"></i>
+                                    <span class="text-white text-md font-display font-lighter ">0</span>
+                                    <i class="fa fa-solid fa-times  text-red-500"></i>
+                                    <span class="text-white text-md font-display font-lighter ">0</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div id="level-2">
+
+                    </div>
+                    <div id="level-3"></div>
+
+                </div>
+                <div id="line-2">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24   flex flex-col gap-6 ">
+            <div id="brands-line-1" class="flex ">
+                <div class=" flex gap-4 justify-center items-center animate-loop-full ">
+                    <div class="flex gap-3 justify-center items-center custom max-w-none">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                </div>
+                <div class=" flex gap-4 justify-center items-center animate-loop-full" aria-hidden="true">
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div id="brands-line-2" class="flex ">
+                <div class=" flex gap-4 justify-center items-center animate-loop-full ">
+                    <div class="flex gap-3 justify-center items-center custom max-w-none">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                </div>
+                <div class=" flex gap-4 justify-center items-center animate-loop-full " aria-hidden="true">
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Amul</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+                    <div class="flex gap-3 justify-center items-center custom">
+                        <div class="min-w-10 min-h-10 text-white">
+                            <img src="./images/asset 36.png" alt="">
+                        </div>
+
+                        <h2 class="text-white text-2xl font-display font-extrabold">Resily</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="px-6 py-12 max-w-7xl mx-auto  mt-80 ">
+            <div class="px-5 py-2">
+                <div class="flex flex-col gap-8 ">
+                    <h2 class="text-emerald-50 font-display font-medium  text-3xl tracking-wide">WHY DEVELOPERS LOVE
+                        WEBAPP.IO</h2>
+                    <h3 class="text-white font-display font-semibold text-3xl ">DevOps building blocks for web app
+                        developers</h3>
+                    <p class="text-gray-200 text-lg font-display font-light">We help webapp developers iterate 10x
+                        faster by removing the bottlenecks to build, test and deploy full-stack webapps</p>
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="flex flex-col bg-gray-900 gap-4 flex-1 rounded-lg px-2 py-8">
+                            <img src="./images/asset 37.png" class="bg-cover w-auto " alt="">
+                            <div class="px-6 py-2 flex flex-col gap-4">
+                                <h3 class="text-white text-lg font-display font-medium  tracking-wider">A full-stack
+                                    preview of every branch</h3>
+                                <p class="text-gray-400 leading-snug tracking-wider font-display font-light  ">Add a
+                                    single line to our configuration file
+                                    to convert your pipeline into a full stack
+                                    preview: 'EXPOSE WEBSITE localhost:8080'
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-1 bg-gray-900 gap-4 rounded-lg px-2 py-8 ">
+                            <img src="./images/asset 37.png" class="bg-cover w-auto " alt="">
+                            <div class="px-6 py-2 flex flex-col gap-4">
+                                <h3 class="text-white text-lg font-display font-medium  tracking-wider">We automatically
+                                    cache every step that runs</h3>
+                                <p class="text-gray-400 leading-snug tracking-wider font-display font-light  ">We watch
+                                    which files are used by which steps
+                                    , and intelligently skip steps like 'npm install' if your change didn't affect those
+                                    files.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-1 bg-gray-900 gap-4 rounded-lg px-2 py-8 ">
+                            <img src="./images/asset 37.png" class="bg-cover w-auto " alt="">
+                            <div class="px-6 py-2 flex flex-col gap-4">
+                                <h3 class="text-white text-lg font-display font-medium  tracking-wider">Parallelize
+                                    end-to-end tests</h3>
+                                <p class="text-gray-400 leading-snug tracking-wider font-display font-light  ">
+                                    You can create 10+ copies of your app for every branch instantly,
+                                    then leverage our integrations with Cypress and other frameworks to run acceptance
+                                    tests 10x faster.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-80">
+                <div class="flex flex-col gap-12">
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-gray-300 text-2xl font-display font-semibold tracking-wide">THREE EASY STEPS
+                        </h1>
+                        <h1 class="text-white text-4xl font-display font-bold tracking-wider">It takes 10 minutes to get
+                            started</h1>
+
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-6">
+
+                        <div class="flex flex-col gap-4  flex-1">
+
+                            <div class="flex  gap-4">
+
+                                <i class="fa fa-brands fa-github text-white"></i>
+                                <h3 class="text-white text-lg font-display tracking-wider font-semibold ">Install on
+                                    GitHub,GitLab,
+                                    or BitBucket
+                                </h3>
+
+
+                            </div>
+                            <p class="text-white text-md font-display tracking-wider font-normal">
+                                Use your guided installer to connect
+                                webapp.io with your source code management system.
+                            </p>
+
+
+                        </div>
+                        <div class="flex flex-col gap-4  flex-1">
+
+                            <div class="flex items-center  gap-4">
+
+                                <i class="fa fa-regular fa-file text-white"></i>
+                                <h3 class="text-white text-lg font-display tracking-wider font-semibold ">Create
+                                    a configuration Layerfile
+                                </h3>
+
+
+                            </div>
+                            <p class="text-white text-md font-display tracking-wider font-normal">
+                                Build a Layerfile, our configuration that specifies the build steps
+                                for your pipeline.
+                            </p>
+
+
+                        </div>
+                        <div class="flex flex-col gap-4  flex-1">
+
+                            <div class="flex items-center gap-4">
+
+                                <i class="fa fa-regular fa-file text-white"></i>
+                                <h3 class="text-white text-lg font-display tracking-wider font-semibold ">
+                                    Push your code like usual
+                                </h3>
+
+
+                            </div>
+                            <p class="text-white text-md font-display tracking-wider font-normal">
+                                Everytime you push code, we'll find the Layerfiles in your repository
+                                and build them
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-80">
+                <div class="bg-gray-800 p-16 rounded-lg">
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col gap-5">
+                            <h1 class="text-white text-4xl font-display font-semibold tracking-wider leading-snug">Ready
+                                to run your webapps in seconds?</h1>
+                            <p class="text-white text-xl font-display font-semibold tracking-wider">Get started with
+                                webapp.io for your CI/CD today</p>
+                        </div>
+                        <button
+                            class="bg-gradient-to-r from-blue-700 via-pink-800 to-violet-500 px-16 py-2 rounded-md  w-fit text-white text-lg tracking-wider font-display font-semibold">
+                            Signup
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-80 flex flex-col gap-6 lg:flex-row">
+
+                <div class="flex flex-col  gap-8 rounded-lg border border-gray-800 flex-1 ">
+                    <ul class="list-decimal space-y-3 list-inside px-8 pt-12 ">
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">FROM</span> webapp.io/react</li>
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">WORKDIR</span> /app</li>
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">COPY</span> . .</li>
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">RUN</span> npm install</li>
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">RUN BACKGROUND</span> npm start</li>
+                        <li class="text-white text-md font-display tracking-wide font-semibold"><span
+                                class="font-bold">RUN</span> npm run cypress localhost:8000</li>
+                    </ul>
+                    <div class="flex justify-around mt-24 bg-gray-800 p-4">
+                        <a href=""
+                            class="text-white text-md font-display font-semibold tracking-wide hover:cursor-pointer">Select
+                            Tech</a>
+                        <a href=""
+                            class="text-white text-md font-display font-semibold tracking-wide hover:cursor-pointer">Select
+                            Test</a>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-gray-300 text-xl font-display font-semibold tracking-wide">HOW IT WORKS</h2>
+                        <h2 class="text-gray-300 text-2xl font-display font-semibold tracking-wide">All it takes is a
+                            layerfile</h2>
+                        <p class="text-gray-300 text-md font-display font-semibold tracking-wide">Layerfiles are like
+                            Dockerfiles that build VMs.
+                            Use them to define build steps and deployment configurations.
+                        </p>
+                    </div>
+                    <button
+                        class="px-4 py-2 text-white text-semibold font-display text-lg tracking-wider lg:w-fit bg-gradient-to-r from-pink-400 via-blue-400 to-violet-400 rounded-lg">
+                        Explore the docs
+                    </button>
+
+                </div>
+            </div>
+            <div class="mt-64">
+                <div class="flex flex-col gap-6 text-white text-md font-display font-semibold tracking-wide">
+                    <h1 class="text-4xl tracking-wider font-bold">Industry leading caching for faster CI</h1>
+                    <p class="leading-snug">
+                        Webapp.io creates snapshots of your pipeline as it builds,
+                        and then reuses those snapshots for future builds.You'll never have to wait for
+                        "npm install" or "docker pull" to run ever again.
+                    </p>
+                    <div class="mt-24  border border-gray-800 px-6 py-16">
+                        <div id="graph" class=" flex gap-4">
+                            <div class="flex flex-col gap-6 px-6 py-3 flex-1">
+                                <div class="w-6 h-24 bg-violet-500">
+
+                                </div>
+                                <div class="w-1/2 h-20 bg-white animate-translateanimation">
+
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white text-2xl font-display font-semibold tracking-wide">5s</span>
+                                    <span
+                                        class="text-white text-2xl font-display font-semibold tracking-wide">30s</span>
+                                    <span
+                                        class="text-white text-2xl font-display font-semibold tracking-wide">60s</span>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <div class="flex w-1/4 flex-col justify-evenly  items-center">
+                                <p class="text-white text-2xl font-display font-semibold tracking-wide">webapp.io</p>
+                                <p class="text-white text-2xl font-display font-semibold tracking-wide">AWS EC2</p>
+                            </div>
+
+                        </div>
+                        <p class="text-white text-center mt-6 text-2xl font-display font-light tracking-wider">Above:
+                            Time in seconds of a cold-start for an environment based on reported usage.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-64 flex flex-col items-center justify-center gap-6">
+                <h1 class="text-white text-4xl font-display font-semibold tracking-wide">A developer experience that
+                    makes you smile :)</h1>
+                <p class="text-white text-md font-display font-light tracking-wider">Your engineering team's source of
+                    truth for pushing features and resolving errors</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-6 mt-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-6 items-center">
+                        <i class="fa fa-solid fa-play text-white"></i>
+                        <h3 class="text-white text-lg font-display font-light tracking-wide">Preview Environments</h3>
+                    </div>
+                    <p class="text-white text-sm font-display font-light tracking-widest leading-relaxed">
+                        View auto-hibernating full stack previews of your
+                        changes for every commit.
+                    </p>
+
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-6 items-center">
+                        <i class="fa fa-solid fa-play text-white"></i>
+                        <h3 class="text-white text-lg font-display font-light tracking-wide">E2E Testing Automation</h3>
+                    </div>
+                    <p class="text-white text-sm font-display font-light tracking-widest leading-relaxed">
+                        Develop faster by creating 10 copies of your VM to
+                        run acceptance tests in parallel.
+                    </p>
+
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <div class="flex gap-6 items-center">
+                        <i class="fa fa-solid fa-play text-white"></i>
+                        <h3 class="text-white text-lg font-display font-light tracking-wide">Continuous integration</h3>
+                    </div>
+                    <p class="text-white text-sm font-display font-light tracking-widest leading-relaxed">
+                        Fork and combine pipelines inti hyper-efficient acceptance test workflows.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="mt-80 bg-gray-900 rounded-lg px-12 py-8 flex flex-col gap-6">
+                <div class="flex flex-col gap-6">
+                    <h1 class="text-white text-2xl font-display font-bold tracking-wide whitespace-nowrap">Ready to run
+                        your webapps in seconds?</h1>
+                    <h3 class="text-white text-lg font-semibold tracking-wide">Get started with webapp.io for your CI/CD
+                        today</h3>
+                </div>
+                <button
+                    class="px-6 py-3 bg-gradient-to-r from-blue-500 via-pink-500 to-violet-500 rounded-lg lg:w-fit text-white text-lg font-semibold lg:px-16 lg:py-3">
+                    Signup
+                </button>
+
+            </div>
+            <div class="mt-80 flex flex-col items-center gap-4 ">
+                <h1 class="text-white  text-3xl font-display leading-snug font-semibold tracking-wide max-w-2xl">
+                    Webapp.io customers have run 50,850,601 <span class="lg:hidden">Layerfiles to date</span></h1>
+                <h1
+                    class="text-white lg:block hidden  text-3xl font-display leading-snug font-semibold tracking-wide max-w-2xl">
+                    Layerfiles to date</h1>
+            </div>
+            <div class="mt-24 grid grid-cols-2 lg:grid-cols-4  gap-4 custom-row"> 
+                <div class="flex items-center justify-center bg-gray-800 rounded-lg">
+                    <h1 class="text-white text-xl font-display font-semibold tracking-wide">BioBox</h1>
+                </div>
+                <div class="flex items-center justify-center bg-gray-800 rounded-lg">
+                    <h1 class="text-white text-xl font-display font-semibold tracking-wide">BioBox</h1>
+                </div>
+                <div class="flex items-center justify-center bg-gray-800 rounded-lg">
+                    <h1 class="text-white text-xl font-display font-semibold tracking-wide">BioBox</h1>
+                </div>
+                <div class="flex items-center justify-center bg-gray-800 rounded-lg">
+                    <h1 class="text-white text-xl font-display font-semibold tracking-wide">BioBox</h1>
+                </div>
+            </div>
+            <div class="mt-80 bg-gray-900 rounded-lg px-12 py-8 flex flex-col items-center gap-6 border border-violet-500">
+                <div class="flex flex-col gap-6 items-center">
+                    <h1 class="text-white lg:text-3xl text-lg font-display font-bold tracking-wide whitespace-nowrap">Ready to run
+                        your webapps in seconds?</h1>
+                    <h3 class="text-white text-lg font-semibold tracking-wide">Get started with webapp.io for your CI/CD
+                        today</h3>
+                </div>
+                <button
+                    class="px-6 py-3 bg-gradient-to-r from-blue-500 via-pink-500 to-violet-500 rounded-lg lg:w-fit text-white text-lg font-semibold lg:px-16 lg:py-3">
+                    Signup
+                </button>
+
+            </div>
+
+            <div class="mt-36 h-[1px] bg-white"></div>
+
+            <div class="mt-16 flex flex-col gap-8">
+                 <div class="flex gap-4 items-center">
+                    <div class="w-12 h-12">
+                        <img src="./images/asset-1.avif" alt="">
+
+                    </div>
+                    <h2 class="text-white text-lg font-display font-semibold tracking-wider">webapp.io</h2>
+
+                 </div>
+                 <div class="grid grid-rows-2 grid-cols-2 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-4 gap-4">
+                      <div class="flex flex-col gap-4">
+                        <h1 class="text-gray-400 text-xl  font-bold tracking-wide">REFERENCE</h1>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">What is CI</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Academy</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Docs</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">API</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Examples</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">integrations</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">What is a webapp?</h3>
+                      </div>
+                      <div class="flex flex-col gap-4">
+                        <h1 class="text-gray-400 text-xl  font-bold tracking-wide">COMPANY</h1>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">About us</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Blog</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Careers</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Security</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Contact Us</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">JellyBear</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Pricing</h3>
+
+                      </div>
+                      <div class="flex flex-col gap-4">
+                        <h1 class="text-gray-400 text-xl  font-bold tracking-wide">CASE STUDIES</h1>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">bxblue - Fintech</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Pulley - Fintech</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Fellow - Saas</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Welcome - Saas</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Vitau - Healthcare</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">BioBox - Biotech</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Mentum - Saas</h3>
+                      </div>
+                      <div class="flex flex-col gap-4">
+                        <h1 class="text-gray-400 text-xl  font-bold tracking-wide">STATUS</h1>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Status Dashboard</h3>
+                        <h3 class="text-white text-lg  font-semibold tracking-wide">Incidents</h3>
+                      </div>
+                 </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
